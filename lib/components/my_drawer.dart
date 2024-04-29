@@ -23,26 +23,26 @@ class MyDrawer extends StatelessWidget {
 
           // home tile
           Padding(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: 25.0,
               top: 25.0,
             ),
             child: ListTile(
-              title: Text("H O M E"),
-              leading: Icon(Icons.home),
+              title: const Text("H O M E"),
+              leading: const Icon(Icons.home),
               onTap: () => Navigator.pop(context),
             ),
           ),
 
           // settings
           Padding(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: 25.0,
               top: 0,
             ),
             child: ListTile(
-              title: Text("S E T T I N G S"),
-              leading: Icon(Icons.settings),
+              title: const Text("S E T T I N G S"),
+              leading: const Icon(Icons.settings),
               onTap: () {
                 // pop drawer
                 Navigator.pop(context);
@@ -50,7 +50,7 @@ class MyDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SettingsPage(),
+                    builder: (context) => const SettingsPage(),
                   ),
                 );
               },
